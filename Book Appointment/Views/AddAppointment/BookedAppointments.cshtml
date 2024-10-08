@@ -1,0 +1,28 @@
+﻿<div class="row justify-content-center">
+    <h2>
+        All Booked Appointments :
+    </h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Patient Name</th>
+            <th scope="col">Doctor Name</th>
+            <th scope="col">Date</th>
+            <th scope="col">Time</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+            <td scope="row">@item.Id</td>
+            <td>@item.PatientName</td>
+            <td>@item.DoctorName</td>
+            <td>@item.Date</td>
+            <td>@item.Time</td>
+        </tr>
+        }
+    </tbody>
+</table>
+</div>
